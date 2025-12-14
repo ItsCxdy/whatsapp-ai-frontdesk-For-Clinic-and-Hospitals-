@@ -165,5 +165,5 @@ We welcome contributions! Whether you're fixing a bug, adding a new feature (lik
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Created by [Your GitHub Username/Alias]  
+Created by [github.com/ItsCxdy, talha.ovais5@gmail.com]  
 Built with Python, FastAPI, and the power of LLMs.
