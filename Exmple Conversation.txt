@@ -1,0 +1,24 @@
+--- AI Front Desk CLI Prototype (Phase 1) ---
+Clinic: Dr. Sharma's Family Clinic | Model: GLM-4.5-Air
+Type 'exit' or 'reset' to quit/clear state.
+
+Patient (START): Hello! Are you open on weekends?
+DEBUG: State transition: START -> START
+Assistant: No, we are closed on Saturdays and Sundays.
+
+Patient (START): I want to book a checkup.
+DEBUG: State transition: START -> AWAITING_NAME
+Assistant: I see you want to book! Could you please provide your full name so I can check availability?
+
+Patient (AWAITING_NAME): My name is Anil Kumar.
+DEBUG: State transition: AWAITING_NAME -> AWAITING_SERVICE
+Assistant: Thank you, Anil Kumar. What service are you booking? We offer: General Consultation, Pediatric Checkup, Vaccination.
+
+Patient (AWAITING_SERVICE): A General Consultation please.
+DEBUG: State transition: AWAITING_SERVICE -> AWAITING_TIME
+Assistant: Perfect, **General Consultation**. What day and time works best for you? Our hours are Mon-Fri: 10:00 - 14:00 & 17:00 - 20:00 (Evening Slot is by Appointment Only).
+
+Patient (AWAITING_TIME): tomorrow at 5:30 pm
+DEBUG: State transition: AWAITING_TIME -> BOOKED
+Assistant: ✅ Success! Your appointment for **General Consultation** has been tentatively booked for **2025-12-14 at 17:30** under the name **Anil Kumar**. We will send a confirmation message shortly!
+DEBUG: State transition: BOOKED -> START

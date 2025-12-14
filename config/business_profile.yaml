@@ -1,0 +1,25 @@
+# config/business_profile.yaml
+clinic_info:
+  name: "Dr. Sharma's Family Clinic"
+  specialty: "General Medicine and Pediatrics"
+  location: "B-4, Nehru Nagar, New Delhi, India"
+  hours: "Mon-Fri: 10:00 - 14:00 & 17:00 - 20:00 (Evening Slot is by Appointment Only)"
+  contact: "+91-9876543210"
+  admin_email: "clinic.admin@example.com"
+
+services:
+  - name: "General Consultation"
+    price: "₹800"
+    duration: "15 mins"
+  - name: "Pediatric Checkup"
+    price: "₹1000"
+    duration: "20 mins"
+  - name: "Vaccination"
+    price: "Varies"
+    duration: "10 mins"
+
+faq:
+  - q: "Is the clinic open on weekends?"
+    a: "No, we are closed on Saturdays and Sundays."
+  - q: "Do you accept card payments?"
+    a: "We accept UPI, cash, and all major debit/credit cards."
